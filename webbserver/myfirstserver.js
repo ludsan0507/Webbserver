@@ -13,8 +13,8 @@ app.get('/myfirstserver.css', (req, res) => {
     res.sendFile(clientDir + 'myfirstserver')
 })
 
-app.get('/kingkong.png', (req, res) => {
-    res.sendFile(clientDir + 'kingkong.png')
+app.get('/postmalone.png', (req, res) => {
+    res.sendFile(clientDir + 'postmalone.png')
 })
 
 app.post('/', (req,res) => {
