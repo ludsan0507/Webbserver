@@ -5,6 +5,7 @@ const port = 3000
 const clientDir = __dirname + "\\client\\"
 
 app.use(express.json())
+app.use(express.json())
 app.use(express.urlencoded())
 
 app.get('/', (req, res) => res.sendFile(clientDir + "myfirstserver.html"))

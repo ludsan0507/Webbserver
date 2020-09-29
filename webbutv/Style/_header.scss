@@ -1,0 +1,21 @@
+header{
+    @include flexCenter( column, red);
+
+    background-color:  lightblue; 
+    
+    button{
+        background: $primaryBtn;}
+        
+        &:hover{
+            background: darkblue;
+        }
+ 
+        &::after{
+            content: "hello";
+        }
+         
+        .contact button{
+             background: $primaryBtn;
+         }
+     }
+ 

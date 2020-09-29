@@ -1,0 +1,36 @@
+header {
+  header: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: Black;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: lightblue;
+}
+
+header button {
+  background: #76eb08;
+}
+
+header:hover {
+  background: darkblue;
+}
+
+header::after {
+  content: "hello";
+}
+
+header .contact button {
+  background: #76eb08;
+}
+
+.contact button {
+  background: #76eb08;
+}
+/*# sourceMappingURL=style.css.map */
