@@ -1,17 +1,17 @@
 header{
-    @include flexCenter( column, red);
+    @include flexCenter( column, rgb(161, 1, 1));
 
-    background-color:  lightblue; 
+    background-color:  rgb(122, 222, 255); 
     
     button{
         background: $primaryBtn;}
         
         &:hover{
-            background: darkblue;
+            background: rgb(1, 1, 121);
         }
  
         &::after{
-            content: "hello";
+            content: "hello my friend!";
         }
          
         .contact button{

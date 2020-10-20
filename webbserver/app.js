@@ -2,6 +2,9 @@ const express = require('express')
 const app = express()
 const port = 3000
 
+const personmodul = require('./Personmodule')
+const store = require('./mongodbTest')
+
 const clientDir = __dirname + "\\client\\"
 
 app.use(express.json())
@@ -19,8 +22,9 @@ app.get('/postmalone.png', (req, res) => {
 })
 
 app.post('/', (req,res) => {
-    console.log(req.body.name)
-    console.log(req.body.email)
+    let person = personmodul.createPerson(req.body.name, req.body.email, req.body.age)
+    person.store();
     res.redirect('/')
 })
+
 
