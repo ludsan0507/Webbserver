@@ -29,3 +29,15 @@
 .manename{
     @include maneName();
 }
+
+.imgplayer{
+    @include imgplayer();
+}
+
+.imgland{
+    @include imgland();
+}
+
+.table{
+    @include table();
+}

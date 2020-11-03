@@ -1,17 +1,4 @@
-body::after {
-    content: "";
-    background: url(anfield2.jpg);
-    opacity: 0.4;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;
-}
-body {
-    background-size: 100%
-}
+
 @mixin logo {
     float: left;
     padding: 5px 5px;
@@ -44,12 +31,12 @@ body {
     right: 10px;
 }
 
-.imgplayer {
+@mixin imgplayer {
     border: 2px solid black;
 
 }
 
-.imgland {
+@mixin imgland {
     border: 2px solid black;
 }
 
@@ -71,5 +58,12 @@ body {
     position: absolute;
     left: 200px;
     bottom: 175px;
+    color: white;
+}
+
+@mixin Table {
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
     color: white;
 }
