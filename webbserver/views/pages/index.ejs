@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="myfirstserver.css">
+    <link rel="stylesheet" href="style.css">
     <title>tjena mittbena </title>
 </head>
 <body>
-    <h1> Tjenare </h1>
+
+    
+    <h1> Tjenare <%= name %></h1>
     <b>blablalba</b>
     <img src="postmalone.jpg" width="720" height="480">
    
     <form action="/" method="post">
-        <input type="text" name="namn" id="">
-        <input type="email" name="email">
+        <input type="text" name="namn" placeholder="Namn">
+        <input type="email" name="email" placeholder="example@emai.com">
+        <input type="number" name="age" placeholder="33">
         <button type="submit"> alright </button>
     
     
