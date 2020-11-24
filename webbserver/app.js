@@ -2,6 +2,8 @@ const express = require('express')
 const app = express()
 const port = 3000
 
+const nameList= ["", ""]
+
 const personmodul = require('./Personmodule')
 const store = require('./mongodbTest')
 
@@ -13,7 +15,7 @@ app.use(express.urlencoded())
 app.set('view engine', 'ejs')
 
 app.get('/', (req, res) => {
-  res.render('pages/index.ejs', {name:"Ludde"})
+  res.render('pages/index.ejs', { name:"Ludde", nameList: nameList })
 })
 
 app.get('/', (req, res) => res.sendFile(clientDir + "index.ejs"))
