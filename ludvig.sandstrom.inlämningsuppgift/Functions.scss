@@ -1,0 +1,70 @@
+
+@mixin logo {
+    float: left;
+    padding: 5px 5px;
+}
+
+
+@mixin container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+@mixin salah {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    right: 10px;
+}
+
+@mixin virgil {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    right: 10px;
+}
+
+@mixin mane {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    right: 10px;
+}
+
+@mixin imgplayer {
+    border: 2px solid black;
+
+}
+
+@mixin imgland {
+    border: 2px solid black;
+}
+
+@mixin salahName {
+    position: absolute;
+    left: 200px;
+    top: 110px;
+    color: white;
+}
+
+@mixin virgilName {
+    position: absolute;
+    left: 200px;
+    bottom: 375px;
+    color: white;
+}
+
+@mixin maneName {
+    position: absolute;
+    left: 200px;
+    bottom: 175px;
+    color: white;
+}
+
+@mixin Table {
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+

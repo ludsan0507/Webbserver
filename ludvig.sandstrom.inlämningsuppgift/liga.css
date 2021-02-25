@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    background: #222;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+header {
+    background-color: red;
+
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+body::after {
+    content: "";
+    background: url(anfield2.jpg);
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+body {
+    background-size: 100%
+}
+
+
+#name {
+    margin: 20px;
+    float: left;
+    width: 10px;
+    font-size: 45px;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 120px;
+    padding-top: 45px;
+
+    position: relative;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: black;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+

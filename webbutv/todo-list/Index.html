@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+
+</head>
+<body>
+    <div id="app">
+
+    </div>
+
+    <div class="container">
+        <h1 class=""> Todo List</h1>
+        <div class="card">
+            <div class="flex">
+                <input placeholder="New todo">
+                <button>Add</button>
+            </div>
+         </div>
+         <div class="card">
+             <div class="card-inner">
+                <h2>Todo</h2>
+                <ul class="list">
+                    <li class="list-item" v-for="item in reversadItems">
+                        ...
+                        <span> {{ item.name}}</span>
+                        ...
+                        <div class="list-item-toggle"></div><span>Ta ut sopporna</span>
+                        <div class="list-item-delete">x</div>
+                    </li>
+                </ul>
+             </div>
+
+         </div>
+        </div>
+
+
+    <script>
+        new Vue( {
+            el: '#app',
+            data: {
+                item:[
+                    {
+                        id: 1,
+                        name: 'tvätta golvet'
+                    },
+                    {
+                        id:2,
+                        name: 'Laga mat'
+                    }
+                ]
+            }
+        });
+    </script>
+</body>
+</html>

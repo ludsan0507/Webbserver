@@ -1,0 +1,44 @@
+.mane{
+    @include mane();
+}
+
+.logo{
+    @include logo();
+}
+
+.container{
+    @include container();
+}
+
+.salah{
+    @include salah();
+}
+
+.virgil{
+    @include virgil();
+}
+
+.salahname{
+    @include salahName();
+}
+
+.virgilname{
+    @include virgilName();
+}
+
+.manename{
+    @include maneName();
+}
+
+.imgplayer{
+    @include imgplayer();
+}
+
+.imgland{
+    @include imgland();
+}
+
+.table{
+    @include table();
+}
+
